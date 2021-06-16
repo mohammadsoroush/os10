@@ -52,7 +52,7 @@ counter=1
 for pic in $(find $direction -type f -name "*.jpg")
 
 do
-    mv $pic $direction/img$((cnt++)).jpg
+    mv $pic $direction/img$((counter=1+counter)).jpg
     
 done
 
