@@ -47,7 +47,7 @@ echo 'Enter the direction':
 
 read direction
 
-cnt=1
+counter=1
 
 for pic in $(find $direction -type f -name "*.jpg")
 
@@ -60,7 +60,7 @@ for pic in $(find $direction -type f -name "*.png")
 
 do
 
-    mv $pic $direction/img$((cnt++)).png
+    mv $pic $direction/img$((counter=1+counter)).png
     
 done
 
